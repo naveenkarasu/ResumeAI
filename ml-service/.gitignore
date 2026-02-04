@@ -1,0 +1,19 @@
+# Generated files
+/target/
+
+# Models (downloaded separately)
+/models/
+
+# Environment files
+.env
+.env.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,62 @@
+# Resume RAG Assistant - Dependencies
+
+# Core
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+
+# LLM Backends
+groq>=0.4.0
+ollama>=0.1.0
+openai>=1.12.0
+google-generativeai>=0.4.0
+anthropic>=0.18.0
+
+# RAG & Embeddings
+langchain>=0.1.0
+langchain-community>=0.0.20
+langchain-groq>=0.0.1
+chromadb>=0.4.0
+sentence-transformers>=2.2.0
+rank-bm25>=0.2.2
+
+# RAG Evaluation
+ragas>=0.1.0
+datasets>=2.14.0
+
+# Web Search
+duckduckgo-search>=4.0.0
+
+# ChatGPT Web Automation (risky)
+playwright>=1.40.0
+undetected-playwright>=0.3.0
+
+# Resume Processing
+pypdf>=3.0.0
+python-docx>=1.0.0
+pylatex>=1.4.0
+
+# UI - Web (Streamlit)
+streamlit>=1.30.0
+streamlit-chat>=0.1.0
+
+# UI - Web (FastAPI)
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.6
+
+# UI - CLI
+typer>=0.9.0
+rich>=13.0.0
+
+# Utilities
+httpx>=0.26.0
+tenacity>=8.2.0
+tiktoken>=0.5.0
+
+# Development
+pytest>=7.0.0
+pytest-asyncio>=0.23.0
+pytest-playwright>=0.4.0
+black>=23.0.0
+ruff>=0.1.0

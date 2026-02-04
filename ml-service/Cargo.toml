@@ -1,0 +1,74 @@
+[package]
+name = "ml-service"
+version = "0.1.0"
+edition = "2021"
+authors = ["Resume RAG Team"]
+description = "ML Service for Resume RAG Platform - Embeddings, Reranking, and Hybrid Search"
+
+[dependencies]
+# Async runtime
+tokio = { version = "1.35", features = ["full"] }
+
+# gRPC
+tonic = "0.10"
+prost = "0.12"
+
+# Web framework (for health endpoints)
+axum = "0.7"
+tower = "0.4"
+tower-http = { version = "0.5", features = ["cors", "trace"] }
+
+# ONNX Runtime for ML inference
+ort = { version = "2.0.0-rc.0", features = ["load-dynamic"] }
+
+# Tokenizers
+tokenizers = "0.15"
+
+# Vector database
+qdrant-client = "1.7"
+
+# BM25 search
+bm25 = "0.1"
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Configuration
+config = "0.14"
+dotenvy = "0.15"
+
+# Logging
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "json"] }
+
+# Error handling
+anyhow = "1.0"
+thiserror = "1.0"
+
+# Utilities
+uuid = { version = "1.6", features = ["v4", "serde"] }
+ndarray = "0.15"
+parking_lot = "0.12"
+dashmap = "5.5"
+once_cell = "1.19"
+
+# HTTP client (for downloading models)
+reqwest = { version = "0.11", features = ["json", "stream"] }
+
+# Async utilities
+futures = "0.3"
+async-trait = "0.1"
+
+[build-dependencies]
+tonic-build = "0.10"
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = 3
+strip = true
+
+[[bin]]
+name = "ml-service"
+path = "src/main.rs"

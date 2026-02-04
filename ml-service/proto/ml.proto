@@ -1,0 +1,168 @@
+syntax = "proto3";
+
+package ml;
+
+option go_package = "github.com/resume-rag/backend/proto/ml";
+
+// ML Service for embeddings, reranking, and hybrid search
+service MLService {
+    // Generate embedding for a single text
+    rpc Embed(EmbedRequest) returns (EmbedResponse);
+
+    // Generate embeddings for multiple texts (batched)
+    rpc EmbedBatch(EmbedBatchRequest) returns (EmbedBatchResponse);
+
+    // Rerank documents using cross-encoder
+    rpc Rerank(RerankRequest) returns (RerankResponse);
+
+    // Hybrid search (BM25 + vector with RRF fusion)
+    rpc Search(SearchRequest) returns (SearchResponse);
+
+    // Extract skills from text using NER
+    rpc ExtractSkills(ExtractSkillsRequest) returns (ExtractSkillsResponse);
+
+    // Index documents for BM25 search
+    rpc IndexDocuments(IndexRequest) returns (IndexResponse);
+
+    // Clear BM25 index
+    rpc ClearIndex(ClearIndexRequest) returns (ClearIndexResponse);
+
+    // Health check
+    rpc HealthCheck(HealthCheckRequest) returns (HealthCheckResponse);
+}
+
+// Embedding messages
+message EmbedRequest {
+    string text = 1;
+    string model = 2;  // Optional: specific model to use
+}
+
+message EmbedResponse {
+    repeated float embedding = 1;
+    int32 dimensions = 2;
+    string model = 3;
+}
+
+message EmbedBatchRequest {
+    repeated string texts = 1;
+    string model = 2;
+}
+
+message EmbedBatchResponse {
+    repeated Embedding embeddings = 1;
+    string model = 2;
+}
+
+message Embedding {
+    repeated float vector = 1;
+    int32 index = 2;  // Original index in batch
+}
+
+// Reranking messages
+message RerankRequest {
+    string query = 1;
+    repeated Document documents = 2;
+    int32 top_k = 3;  // Number of top results to return
+    string model = 4;  // Optional: specific reranker model
+}
+
+message RerankResponse {
+    repeated RankedDocument documents = 1;
+    string model = 2;
+}
+
+message Document {
+    string id = 1;
+    string content = 2;
+    float score = 3;  // Optional: initial score
+    map<string, string> metadata = 4;
+}
+
+message RankedDocument {
+    string id = 1;
+    string content = 2;
+    float score = 3;  // Reranking score
+    int32 original_rank = 4;
+    int32 new_rank = 5;
+    map<string, string> metadata = 6;
+}
+
+// Search messages
+message SearchRequest {
+    string query = 1;
+    int32 top_k = 2;
+    string collection = 3;  // Qdrant collection name
+    map<string, string> filters = 4;  // Payload filters
+    bool use_hybrid = 5;  // Use hybrid search (BM25 + vector)
+    float vector_weight = 6;  // Weight for vector search (0-1), BM25 weight = 1 - vector_weight
+    bool use_reranking = 7;  // Apply cross-encoder reranking
+    int32 rerank_top_k = 8;  // How many to fetch before reranking
+}
+
+message SearchResponse {
+    repeated SearchResult results = 1;
+    string search_mode = 2;  // "vector", "bm25", "hybrid"
+    int64 latency_ms = 3;
+}
+
+message SearchResult {
+    string id = 1;
+    string content = 2;
+    float score = 3;
+    map<string, string> metadata = 4;
+    string source = 5;  // "vector", "bm25", or "hybrid"
+}
+
+// Skills extraction messages
+message ExtractSkillsRequest {
+    string text = 1;
+    bool include_soft_skills = 2;
+}
+
+message ExtractSkillsResponse {
+    repeated string technical_skills = 1;
+    repeated string soft_skills = 2;
+    repeated string tools = 3;
+    repeated string frameworks = 4;
+    repeated string languages = 5;  // Programming languages
+}
+
+// Indexing messages
+message IndexRequest {
+    repeated IndexDocument documents = 1;
+    string collection = 2;  // Collection/index name
+    bool update_bm25 = 3;  // Also update BM25 index
+}
+
+message IndexDocument {
+    string id = 1;
+    string content = 2;
+    map<string, string> metadata = 3;
+    repeated float embedding = 4;  // Optional: pre-computed embedding
+}
+
+message IndexResponse {
+    int32 indexed_count = 1;
+    int32 failed_count = 2;
+    repeated string failed_ids = 3;
+}
+
+message ClearIndexRequest {
+    string collection = 1;
+    bool clear_bm25 = 2;  // Also clear BM25 index
+    bool clear_vectors = 3;  // Also clear Qdrant collection
+}
+
+message ClearIndexResponse {
+    bool success = 1;
+    string message = 2;
+}
+
+// Health check messages
+message HealthCheckRequest {}
+
+message HealthCheckResponse {
+    string status = 1;  // "healthy", "degraded", "unhealthy"
+    map<string, string> components = 2;  // Component status
+    string version = 3;
+}

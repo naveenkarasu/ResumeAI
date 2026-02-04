@@ -1,0 +1,23 @@
+# ML Service Configuration
+
+server:
+  grpc_port: 50051
+  http_port: 50052
+  host: "0.0.0.0"
+
+qdrant:
+  host: "localhost"
+  port: 6334
+  collection_prefix: "resume_rag"
+
+models:
+  embedding_model: "all-MiniLM-L6-v2"
+  reranker_model: "ms-marco-MiniLM-L-6-v2"
+  models_dir: "./models"
+
+search:
+  default_top_k: 10
+  vector_weight: 0.7
+  bm25_weight: 0.3
+  rrf_k: 60
+  rerank_fetch_multiplier: 5

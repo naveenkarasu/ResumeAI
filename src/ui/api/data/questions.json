@@ -1,0 +1,273 @@
+{
+  "questions": [
+    {
+      "id": "beh-001",
+      "question": "Tell me about a time you had to deal with a difficult team member or stakeholder.",
+      "category": "behavioral",
+      "role_types": ["swe", "data", "devops", "em"],
+      "difficulty": "medium",
+      "tips": "Use STAR format. Focus on your actions and the positive outcome."
+    },
+    {
+      "id": "beh-002",
+      "question": "Describe a situation where you had to meet a tight deadline. How did you handle it?",
+      "category": "behavioral",
+      "role_types": ["swe", "data", "devops", "em"],
+      "difficulty": "easy",
+      "tips": "Emphasize prioritization, communication, and successful delivery."
+    },
+    {
+      "id": "beh-003",
+      "question": "Tell me about a time you made a mistake at work. How did you handle it?",
+      "category": "behavioral",
+      "role_types": ["swe", "data", "devops", "em"],
+      "difficulty": "medium",
+      "tips": "Show accountability, learning, and how you prevented recurrence."
+    },
+    {
+      "id": "beh-004",
+      "question": "Describe a project you're most proud of. What was your role?",
+      "category": "behavioral",
+      "role_types": ["swe", "data", "devops", "em"],
+      "difficulty": "easy",
+      "tips": "Quantify impact. Explain technical decisions and trade-offs."
+    },
+    {
+      "id": "beh-005",
+      "question": "Tell me about a time you had to learn a new technology quickly.",
+      "category": "behavioral",
+      "role_types": ["swe", "data", "devops"],
+      "difficulty": "easy",
+      "tips": "Show your learning process and how you applied new knowledge."
+    },
+    {
+      "id": "beh-006",
+      "question": "Describe a time when you disagreed with a technical decision. What did you do?",
+      "category": "behavioral",
+      "role_types": ["swe", "data", "devops", "em"],
+      "difficulty": "hard",
+      "tips": "Show respectful communication, data-driven arguments, and flexibility."
+    },
+    {
+      "id": "beh-007",
+      "question": "Tell me about a time you improved a process or system without being asked.",
+      "category": "behavioral",
+      "role_types": ["swe", "data", "devops", "em"],
+      "difficulty": "medium",
+      "tips": "Demonstrate initiative and quantify the improvement."
+    },
+    {
+      "id": "beh-008",
+      "question": "Describe how you've mentored or helped develop a junior team member.",
+      "category": "behavioral",
+      "role_types": ["swe", "em"],
+      "difficulty": "medium",
+      "tips": "Focus on your approach and their growth outcomes."
+    },
+    {
+      "id": "tech-001",
+      "question": "Explain how you would design a URL shortening service like bit.ly.",
+      "category": "system_design",
+      "role_types": ["swe", "devops"],
+      "difficulty": "medium",
+      "tips": "Cover requirements, API design, database schema, and scaling."
+    },
+    {
+      "id": "tech-002",
+      "question": "How would you design a rate limiter for an API?",
+      "category": "system_design",
+      "role_types": ["swe", "devops"],
+      "difficulty": "medium",
+      "tips": "Discuss algorithms (token bucket, sliding window), distributed considerations."
+    },
+    {
+      "id": "tech-003",
+      "question": "Design a notification system that can send emails, SMS, and push notifications.",
+      "category": "system_design",
+      "role_types": ["swe", "devops"],
+      "difficulty": "hard",
+      "tips": "Cover message queues, retry logic, templates, and user preferences."
+    },
+    {
+      "id": "tech-004",
+      "question": "How would you design a real-time chat application?",
+      "category": "system_design",
+      "role_types": ["swe"],
+      "difficulty": "hard",
+      "tips": "Discuss WebSockets, message persistence, presence, and scaling."
+    },
+    {
+      "id": "tech-005",
+      "question": "Explain how you would optimize a slow database query.",
+      "category": "technical",
+      "role_types": ["swe", "data"],
+      "difficulty": "medium",
+      "tips": "Cover EXPLAIN, indexing, query rewriting, denormalization."
+    },
+    {
+      "id": "tech-006",
+      "question": "What's the difference between SQL and NoSQL databases? When would you use each?",
+      "category": "technical",
+      "role_types": ["swe", "data"],
+      "difficulty": "easy",
+      "tips": "Discuss ACID vs BASE, schema flexibility, scaling patterns."
+    },
+    {
+      "id": "tech-007",
+      "question": "Explain the concept of eventual consistency and when it's appropriate.",
+      "category": "technical",
+      "role_types": ["swe", "devops"],
+      "difficulty": "medium",
+      "tips": "Cover CAP theorem, use cases, and trade-offs."
+    },
+    {
+      "id": "tech-008",
+      "question": "How do you ensure code quality in your projects?",
+      "category": "technical",
+      "role_types": ["swe", "data", "devops"],
+      "difficulty": "easy",
+      "tips": "Discuss testing, code review, linting, CI/CD, documentation."
+    },
+    {
+      "id": "tech-009",
+      "question": "Explain microservices architecture. What are its pros and cons?",
+      "category": "technical",
+      "role_types": ["swe", "devops"],
+      "difficulty": "medium",
+      "tips": "Cover service boundaries, communication, deployment complexity."
+    },
+    {
+      "id": "data-001",
+      "question": "How would you handle missing data in a machine learning dataset?",
+      "category": "technical",
+      "role_types": ["data"],
+      "difficulty": "medium",
+      "tips": "Discuss imputation strategies, deletion, and impact on model."
+    },
+    {
+      "id": "data-002",
+      "question": "Explain the bias-variance tradeoff.",
+      "category": "technical",
+      "role_types": ["data"],
+      "difficulty": "medium",
+      "tips": "Use examples, discuss underfitting vs overfitting."
+    },
+    {
+      "id": "data-003",
+      "question": "How would you build a recommendation system?",
+      "category": "system_design",
+      "role_types": ["data", "swe"],
+      "difficulty": "hard",
+      "tips": "Cover collaborative filtering, content-based, hybrid approaches."
+    },
+    {
+      "id": "data-004",
+      "question": "Describe your approach to feature engineering.",
+      "category": "technical",
+      "role_types": ["data"],
+      "difficulty": "medium",
+      "tips": "Discuss domain knowledge, feature selection, validation."
+    },
+    {
+      "id": "devops-001",
+      "question": "How would you implement a CI/CD pipeline for a microservices application?",
+      "category": "technical",
+      "role_types": ["devops", "swe"],
+      "difficulty": "medium",
+      "tips": "Cover build, test, deploy stages, rollback strategies."
+    },
+    {
+      "id": "devops-002",
+      "question": "Explain how you would set up monitoring and alerting for a production system.",
+      "category": "technical",
+      "role_types": ["devops", "swe"],
+      "difficulty": "medium",
+      "tips": "Discuss metrics, logs, traces, SLIs/SLOs, and on-call."
+    },
+    {
+      "id": "devops-003",
+      "question": "What's your approach to infrastructure as code?",
+      "category": "technical",
+      "role_types": ["devops"],
+      "difficulty": "medium",
+      "tips": "Cover Terraform/CloudFormation, state management, testing."
+    },
+    {
+      "id": "lead-001",
+      "question": "How do you prioritize competing requests from different stakeholders?",
+      "category": "leadership",
+      "role_types": ["em", "swe"],
+      "difficulty": "medium",
+      "tips": "Discuss frameworks, communication, and data-driven decisions."
+    },
+    {
+      "id": "lead-002",
+      "question": "How do you handle underperforming team members?",
+      "category": "leadership",
+      "role_types": ["em"],
+      "difficulty": "hard",
+      "tips": "Cover diagnosis, support, clear expectations, documentation."
+    },
+    {
+      "id": "lead-003",
+      "question": "Describe how you've built or scaled an engineering team.",
+      "category": "leadership",
+      "role_types": ["em"],
+      "difficulty": "hard",
+      "tips": "Cover hiring, onboarding, culture, and team structure."
+    },
+    {
+      "id": "lead-004",
+      "question": "How do you balance technical debt with new feature development?",
+      "category": "leadership",
+      "role_types": ["em", "swe"],
+      "difficulty": "medium",
+      "tips": "Discuss quantification, prioritization, and stakeholder communication."
+    },
+    {
+      "id": "gen-001",
+      "question": "Why are you interested in this role/company?",
+      "category": "general",
+      "role_types": ["swe", "data", "devops", "em"],
+      "difficulty": "easy",
+      "tips": "Research the company. Connect your experience to their mission."
+    },
+    {
+      "id": "gen-002",
+      "question": "Where do you see yourself in 5 years?",
+      "category": "general",
+      "role_types": ["swe", "data", "devops", "em"],
+      "difficulty": "easy",
+      "tips": "Show ambition aligned with realistic career growth."
+    },
+    {
+      "id": "gen-003",
+      "question": "What's your biggest weakness?",
+      "category": "general",
+      "role_types": ["swe", "data", "devops", "em"],
+      "difficulty": "medium",
+      "tips": "Be genuine. Show self-awareness and improvement efforts."
+    },
+    {
+      "id": "gen-004",
+      "question": "Tell me about yourself.",
+      "category": "general",
+      "role_types": ["swe", "data", "devops", "em"],
+      "difficulty": "easy",
+      "tips": "Give a 2-minute summary: background, key experiences, why this role."
+    }
+  ],
+  "categories": [
+    {"id": "behavioral", "name": "Behavioral", "description": "Questions about past experiences and soft skills"},
+    {"id": "technical", "name": "Technical", "description": "Questions about technical knowledge and skills"},
+    {"id": "system_design", "name": "System Design", "description": "Questions about designing systems and architecture"},
+    {"id": "leadership", "name": "Leadership", "description": "Questions about leadership and management"},
+    {"id": "general", "name": "General", "description": "Common interview questions"}
+  ],
+  "role_types": [
+    {"id": "swe", "name": "Software Engineer", "description": "Backend, Frontend, Fullstack"},
+    {"id": "data", "name": "Data/ML Engineer", "description": "Data Science, Machine Learning, Analytics"},
+    {"id": "devops", "name": "DevOps/Platform", "description": "Infrastructure, SRE, Platform Engineering"},
+    {"id": "em", "name": "Engineering Manager", "description": "Tech Lead, Engineering Manager, Director"}
+  ]
+}

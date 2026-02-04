@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #213547;
+  background-color: #f8fafc;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Markdown styles */
+.prose h1 { @apply text-2xl font-bold mb-4; }
+.prose h2 { @apply text-xl font-semibold mb-3; }
+.prose h3 { @apply text-lg font-medium mb-2; }
+.prose p { @apply mb-3; }
+.prose ul { @apply list-disc pl-5 mb-3; }
+.prose ol { @apply list-decimal pl-5 mb-3; }
+.prose li { @apply mb-1; }
+.prose code { @apply bg-gray-100 px-1 py-0.5 rounded text-sm font-mono; }
+.prose pre { @apply bg-gray-100 p-3 rounded overflow-x-auto mb-3; }
+.prose pre code { @apply bg-transparent p-0; }
+.prose strong { @apply font-semibold; }
+.prose a { @apply text-primary-600 hover:underline; }
+.prose blockquote { @apply border-l-4 border-gray-300 pl-4 italic; }
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}

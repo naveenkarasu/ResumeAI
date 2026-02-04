@@ -1,0 +1,88 @@
+"""Pydantic models for API requests and responses"""
+
+from .requests import (
+    ChatRequest,
+    AnalyzeJobRequest,
+    InterviewQuestionRequest,
+    StarStoryRequest,
+    PracticeAnswerRequest,
+    EmailRequest,
+    SettingsUpdateRequest,
+)
+
+from .responses import (
+    ChatResponse,
+    Citation,
+    AnalysisResponse,
+    MatchResult,
+    GapAnalysis,
+    InterviewQuestion,
+    StarStory,
+    PracticeFeedback,
+    EmailResponse,
+    SettingsResponse,
+    BackendInfo,
+    StatusResponse,
+    ErrorResponse,
+)
+
+from .job_models import (
+    JobMatchRequest,
+    BatchJobMatchRequest,
+    JobOptimizeRequest,
+    JobMatchResponse,
+    BatchJobMatchResponse,
+    JobHistoryItem,
+    JobHistoryResponse,
+    SkillsAnalytics,
+    SkillFrequency,
+    MatchedSkill,
+    MissingSkill,
+    Recommendation,
+    ScoreBreakdown,
+    ExtractedRequirements,
+    SkillImportance,
+    MatchQuality,
+)
+
+__all__ = [
+    # Requests
+    "ChatRequest",
+    "AnalyzeJobRequest",
+    "InterviewQuestionRequest",
+    "StarStoryRequest",
+    "PracticeAnswerRequest",
+    "EmailRequest",
+    "SettingsUpdateRequest",
+    # Responses
+    "ChatResponse",
+    "Citation",
+    "AnalysisResponse",
+    "MatchResult",
+    "GapAnalysis",
+    "InterviewQuestion",
+    "StarStory",
+    "PracticeFeedback",
+    "EmailResponse",
+    "SettingsResponse",
+    "BackendInfo",
+    "StatusResponse",
+    "ErrorResponse",
+    # Job Matching
+    "JobMatchRequest",
+    "BatchJobMatchRequest",
+    "JobOptimizeRequest",
+    "JobMatchResponse",
+    "BatchJobMatchResponse",
+    "JobHistoryItem",
+    "JobHistoryResponse",
+    "SkillsAnalytics",
+    "SkillFrequency",
+    "MatchedSkill",
+    "MissingSkill",
+    "Recommendation",
+    "ScoreBreakdown",
+    "ExtractedRequirements",
+    "SkillImportance",
+    "MatchQuality",
+]

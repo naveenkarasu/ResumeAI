@@ -1,0 +1,60 @@
+# Resume RAG Platform - Docker Ignore
+
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv
+venv
+ENV
+.pytest_cache
+.coverage
+htmlcov
+.mypy_cache
+.ruff_cache
+
+# Node
+node_modules
+npm-debug.log
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Documentation
+docs
+*.md
+!README.md
+
+# Tests
+tests
+*_test.py
+test_*
+
+# Development files
+Dockerfile.dev
+docker-compose.dev.yml
+scripts
+
+# Build artifacts (we'll build inside container)
+frontend/dist
+*.egg-info
+dist
+build

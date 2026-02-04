@@ -1,0 +1,161 @@
+# ResumeAI - Git Ignore
+
+# ===================
+# Python
+# ===================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv
+venv/
+ENV/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Type checking
+.mypy_cache/
+
+# Linting
+.ruff_cache/
+
+# ===================
+# Node.js
+# ===================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+frontend/dist/
+
+# ===================
+# Environment
+# ===================
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# ===================
+# IDE / Editor
+# ===================
+.idea/
+.vscode/
+.claude/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# ===================
+# OS
+# ===================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ===================
+# Data / Logs
+# ===================
+*.log
+logs/
+data/chroma/
+data/chroma_db/
+data/*.db
+data/*.sqlite3
+!data/.gitkeep
+!data/resumes/.gitkeep
+
+# ===================
+# Secrets
+# ===================
+*.pem
+*.key
+secrets/
+credentials.json
+
+# ===================
+# Docker
+# ===================
+docker-compose.override.yml
+
+# ===================
+# Misc
+# ===================
+*.bak
+*.tmp
+*.temp
+.cache/
+
+# ===================
+# User Data (Private)
+# ===================
+# Resume files and folders (personal data)
+data/resumes/
+src/resume/resumes*/
+
+# ===================
+# LaTeX Build Artifacts
+# ===================
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Job database (contains personal job search data)
+*.db
+*.sqlite3
+
+# ===================
+# Build Artifacts
+# ===================
+*.pyc
+*.pyo
+*.egg
+*.whl
+
+# ===================
+# Windows Reserved Names
+# ===================
+nul
+NUL
+con
+CON
+aux
+AUX
