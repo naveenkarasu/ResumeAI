@@ -1,5 +1,5 @@
 """
-Command-Line Interface for Resume RAG Assistant
+Command-Line Interface for ResumeAI
 
 Usage:
     python -m src.ui.cli chat "What are my top skills?"
@@ -46,7 +46,7 @@ def chat(
     backend: Optional[str] = typer.Option(None, "--backend", "-b", help="LLM backend (groq/ollama/openai/chatgpt_web)"),
     task: str = typer.Option("default", "--task", "-t", help="Task type (default/email_draft/resume_tailor/interview_prep)")
 ):
-    """Chat with the Resume RAG Assistant"""
+    """Chat with ResumeAI"""
     rag = get_rag()
 
     with console.status("[bold green]Thinking..."):
@@ -208,7 +208,7 @@ def interactive(
         rag.llm_router.set_backend(backend)
 
     console.print(Panel(
-        "[bold]Resume RAG Assistant[/bold]\n\n"
+        "[bold]ResumeAI[/bold]\n\n"
         "Commands:\n"
         "  /email <job>  - Draft an email\n"
         "  /tailor <job> - Get resume suggestions\n"

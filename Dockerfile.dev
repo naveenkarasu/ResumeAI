@@ -1,4 +1,4 @@
-# Resume RAG Platform - Development Dockerfile
+# ResumeAI - Development Dockerfile
 # Optimized for development with hot reload
 
 FROM python:3.11-slim

@@ -1,4 +1,4 @@
-# Resume RAG Assistant - Dependencies
+# ResumeAI - Dependencies
 
 # Core
 python-dotenv>=1.0.0

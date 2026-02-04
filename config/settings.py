@@ -1,5 +1,5 @@
 """
-Configuration settings for Resume RAG Assistant
+Configuration settings for ResumeAI
 """
 
 from pydantic_settings import BaseSettings

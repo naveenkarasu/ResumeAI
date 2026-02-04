@@ -1,10 +1,10 @@
 #!/bin/bash
-# Resume RAG Platform - Development Server
+# ResumeAI - Development Server
 # Starts both backend and frontend in development mode
 
 set -e
 
-echo "🚀 Starting Resume RAG Platform (Development)"
+echo "Starting ResumeAI (Development)"
 
 # Check if .env exists
 if [ ! -f .env ]; then

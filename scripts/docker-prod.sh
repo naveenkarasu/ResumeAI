@@ -1,9 +1,9 @@
 #!/bin/bash
-# Resume RAG Platform - Docker Production
+# ResumeAI - Docker Production
 
 set -e
 
-echo "🐳 Starting Resume RAG Platform with Docker (Production)"
+echo "Starting ResumeAI with Docker (Production)"
 
 # Check for .env
 if [ ! -f .env ]; then

@@ -1,4 +1,4 @@
-"""LLM Backend implementations for Resume RAG Assistant"""
+"""LLM Backend implementations for ResumeAI"""
 
 from .base import BaseLLM, LLMResponse, Message, LLMType
 from .router import LLMRouter

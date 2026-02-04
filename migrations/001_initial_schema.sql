@@ -1,4 +1,4 @@
--- Resume RAG Initial Schema
+-- ResumeAI Initial Schema
 -- PostgreSQL 16+
 
 -- Enable extensions

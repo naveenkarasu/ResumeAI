@@ -1,4 +1,4 @@
-# Resume RAG Platform - Docker Compose (Development)
+# ResumeAI - Docker Compose (Development)
 # Development configuration with hot reload
 
 version: '3.8'

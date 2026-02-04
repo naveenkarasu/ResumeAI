@@ -58,7 +58,7 @@ class OpenRouterLLM(BaseLLM):
                 base_url=self.OPENROUTER_BASE_URL,
                 default_headers={
                     "HTTP-Referer": "https://github.com/resume-rag",
-                    "X-Title": "Resume RAG Assistant"
+                    "X-Title": "ResumeAI"
                 }
             )
         return self._client

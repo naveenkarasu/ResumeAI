@@ -1,9 +1,9 @@
 #!/bin/bash
-# Resume RAG Platform - Production Build Script
+# ResumeAI - Production Build Script
 
 set -e
 
-echo "🏗️  Building Resume RAG Platform for Production"
+echo "Building ResumeAI for Production"
 
 # Build frontend
 echo "📦 Building frontend..."

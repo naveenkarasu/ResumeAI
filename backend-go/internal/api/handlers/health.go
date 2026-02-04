@@ -65,7 +65,7 @@ func Root(cfg *config.Config) fiber.Handler {
 		}
 
 		return c.JSON(fiber.Map{
-			"name":    "Resume RAG Platform API",
+			"name":    "ResumeAI API",
 			"version": version,
 			"docs":    docsURL,
 			"health":  "/health",

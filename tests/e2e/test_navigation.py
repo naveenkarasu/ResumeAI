@@ -12,7 +12,7 @@ class TestNavigation:
         page.goto(base_url)
 
         # Check page title or header
-        expect(page.locator("h1")).to_contain_text("Resume RAG")
+        expect(page.locator("h1")).to_contain_text("ResumeAI")
 
     def test_sidebar_navigation(self, page: Page, base_url: str):
         """Test that sidebar navigation works"""

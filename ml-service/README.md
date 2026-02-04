@@ -1,6 +1,6 @@
 # ML Service
 
-High-performance ML service for Resume RAG built in Rust with ONNX Runtime.
+High-performance ML service for ResumeAI built in Rust with ONNX Runtime.
 
 ## Features
 

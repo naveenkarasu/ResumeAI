@@ -1,4 +1,4 @@
-"""FastAPI application for Resume RAG Platform - Production Ready"""
+"""FastAPI application for ResumeAI - Production Ready"""
 
 import sys
 import logging
@@ -49,7 +49,7 @@ async def lifespan(app: FastAPI):
     yield
 
     # Shutdown
-    logger.info("Shutting down Resume RAG Platform API")
+    logger.info("Shutting down ResumeAI API")
 
 
 # Create FastAPI app
@@ -57,7 +57,7 @@ app = FastAPI(
     title=settings.app_name,
     version=settings.app_version,
     description="""
-    Resume RAG Platform API - Production Ready
+    ResumeAI API
 
     A RAG-powered system for resume-based Q&A, job matching, interview preparation,
     and application email generation.

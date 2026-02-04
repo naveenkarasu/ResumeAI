@@ -1,6 +1,6 @@
 @echo off
 echo ========================================
-echo Resume RAG Assistant - Installation
+echo ResumeAI - Installation
 echo ========================================
 echo.
 

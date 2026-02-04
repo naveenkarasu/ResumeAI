@@ -1,5 +1,5 @@
 """
-Setup script for Resume RAG Assistant
+Setup script for ResumeAI
 
 Run this after cloning/downloading to:
 1. Install dependencies
@@ -20,7 +20,7 @@ def main():
     resumes_dir = data_dir / "resumes"
 
     print("=" * 50)
-    print("Resume RAG Assistant - Setup")
+    print("ResumeAI - Setup")
     print("=" * 50)
 
     # Step 1: Create directories

@@ -1,5 +1,5 @@
 """
-Resume RAG Chain - Combines retrieval with LLM generation
+ResumeAI RAG Chain - Combines retrieval with LLM generation
 """
 
 from typing import Optional, List, Dict, Any, Tuple

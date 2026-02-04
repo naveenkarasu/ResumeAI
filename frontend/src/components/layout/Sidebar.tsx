@@ -27,7 +27,7 @@ export function Sidebar({ onClose }: SidebarProps) {
       <div className="p-4 border-b border-gray-200 flex items-center justify-between">
         <div>
           <h1 className="text-xl font-bold text-primary-600">
-            Resume RAG
+            ResumeAI
           </h1>
           <p className="text-xs text-gray-500 mt-1">AI-Powered Job Search</p>
         </div>

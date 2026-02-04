@@ -11,7 +11,7 @@ AI-powered resume management and job search platform with intelligent matching, 
 
 ### Core Features
 - **Multi-LLM Support**: Groq, Gemini, OpenAI, Claude, DeepSeek, OpenRouter, Ollama (local)
-- **Resume RAG**: Your resumes as a searchable knowledge base with vector embeddings
+- **Smart Resume Search**: Your resumes as a searchable knowledge base with vector embeddings
 - **Smart Chat**: Context-aware conversations about your experience and skills
 
 ### Job Search & Tracking
@@ -39,8 +39,8 @@ AI-powered resume management and job search platform with intelligent matching, 
 ### 1. Clone and Setup
 
 ```bash
-git clone https://github.com/yourusername/resumeai.git
-cd resumeai
+git clone https://github.com/naveenkarasu/ResumeAI.git
+cd ResumeAI
 python setup.py
 ```
 

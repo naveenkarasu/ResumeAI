@@ -1,4 +1,4 @@
-# Resume RAG Platform - Docker Compose
+# ResumeAI - Docker Compose
 # Production deployment configuration
 
 version: '3.8'

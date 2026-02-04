@@ -14,7 +14,7 @@ use ml_service::search::{HybridSearch, QdrantClient};
 
 #[derive(Parser, Debug)]
 #[command(name = "ml-service")]
-#[command(about = "ML Service for Resume RAG - embeddings, reranking, and hybrid search")]
+#[command(about = "ML Service for ResumeAI - embeddings, reranking, and hybrid search")]
 struct Args {
     /// Config file path
     #[arg(short, long, default_value = "config.yaml")]

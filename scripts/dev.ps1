@@ -1,7 +1,7 @@
-# Resume RAG Platform - Development Server (Windows PowerShell)
+# ResumeAI - Development Server (Windows PowerShell)
 # Starts both backend and frontend in development mode
 
-Write-Host "🚀 Starting Resume RAG Platform (Development)" -ForegroundColor Cyan
+Write-Host "Starting ResumeAI (Development)" -ForegroundColor Cyan
 
 # Check if .env exists
 if (-not (Test-Path .env)) {

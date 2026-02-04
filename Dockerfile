@@ -1,4 +1,4 @@
-# Resume RAG Platform - Production Dockerfile
+# ResumeAI - Production Dockerfile
 # Multi-stage build for smaller image size
 
 # ===================

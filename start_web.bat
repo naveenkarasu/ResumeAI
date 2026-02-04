@@ -1,5 +1,5 @@
 @echo off
-echo Starting Resume RAG Assistant - Web UI
+echo Starting ResumeAI - Web UI
 echo.
 cd /d "%~dp0"
 if exist venv\Scripts\activate.bat (

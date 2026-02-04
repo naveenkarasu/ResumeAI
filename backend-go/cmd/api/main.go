@@ -33,14 +33,14 @@ func main() {
 	logger.Init(cfg.Server.Debug)
 	defer logger.Sync()
 
-	logger.Info("Starting Resume RAG API",
+	logger.Info("Starting ResumeAI API",
 		zap.String("version", "2.0.0"),
 		zap.Bool("debug", cfg.Server.Debug),
 	)
 
 	// Create Fiber app
 	app := fiber.New(fiber.Config{
-		AppName:               "Resume RAG API v2.0.0",
+		AppName:               "ResumeAI API v2.0.0",
 		ReadTimeout:           cfg.Server.ReadTimeout,
 		WriteTimeout:          cfg.Server.WriteTimeout,
 		DisableStartupMessage: !cfg.Server.Debug,

@@ -11,7 +11,7 @@ class APISettings(BaseSettings):
     """API-specific settings loaded from environment"""
 
     # App info
-    app_name: str = "Resume RAG Platform"
+    app_name: str = "ResumeAI"
     app_version: str = "1.0.0"
     environment: str = "development"
     debug: bool = False

@@ -1,4 +1,4 @@
-"""FastAPI backend for Resume RAG Platform"""
+"""FastAPI backend for ResumeAI"""
 
 from .main import app
 

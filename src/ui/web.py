@@ -1,5 +1,5 @@
 """
-Streamlit Web Interface for Resume RAG Assistant
+Streamlit Web Interface for ResumeAI
 
 Run with: streamlit run src/ui/web.py
 """
@@ -19,7 +19,7 @@ from config.settings import settings
 
 # Page config
 st.set_page_config(
-    page_title="Resume RAG Assistant",
+    page_title="ResumeAI",
     page_icon="📄",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -115,7 +115,7 @@ with st.sidebar:
 
 
 # Main content
-st.title("📄 Resume RAG Assistant")
+st.title("📄 ResumeAI")
 st.caption("AI-powered resume management and job application helper")
 
 # Tabs
@@ -250,4 +250,4 @@ with tab4:
 
 # Footer
 st.divider()
-st.caption("Resume RAG Assistant | Powered by Groq/Ollama/OpenAI | Built with Streamlit")
+st.caption("ResumeAI | Powered by Groq/Ollama/OpenAI | Built with Streamlit")

@@ -1,5 +1,5 @@
 """
-Resume RAG Assistant - Main Entry Point
+ResumeAI - Main Entry Point
 
 Usage:
     # Start web UI
@@ -82,7 +82,7 @@ def main():
         rag = ResumeRAG()
         router = LLMRouter()
 
-        print("\n=== Resume RAG Assistant Status ===\n")
+        print("\n=== ResumeAI Status ===\n")
 
         status = rag.get_status()
         print(f"Indexed Documents: {status['indexed_documents']}")
@@ -104,8 +104,8 @@ def main():
 
 def print_help():
     print("""
-Resume RAG Assistant
-====================
+ResumeAI
+========
 
 Commands:
     web             Start the Streamlit web interface

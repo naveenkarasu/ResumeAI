@@ -2,8 +2,8 @@
 name = "ml-service"
 version = "0.1.0"
 edition = "2021"
-authors = ["Resume RAG Team"]
-description = "ML Service for Resume RAG Platform - Embeddings, Reranking, and Hybrid Search"
+authors = ["ResumeAI Team"]
+description = "ML Service for ResumeAI - Embeddings, Reranking, and Hybrid Search"
 
 [dependencies]
 # Async runtime

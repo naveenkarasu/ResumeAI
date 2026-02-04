@@ -50,7 +50,7 @@ export function SettingsPage() {
       {/* Header */}
       <div className="mb-4 md:mb-6">
         <h1 className="text-xl md:text-2xl font-bold text-gray-900">Settings</h1>
-        <p className="text-sm text-gray-500 hidden sm:block">Configure your Resume RAG Platform</p>
+        <p className="text-sm text-gray-500 hidden sm:block">Configure your ResumeAI</p>
       </div>
 
       <div className="space-y-4 md:space-y-6 max-w-2xl">
